@@ -75,6 +75,14 @@ public class Room : MonoBehaviour
         }
         
     }
+
+    public void SetNewPlace()
+    {
+        foreach (Door allDoor in allDoors)
+        {
+            allDoor.SetColliderActive(); 
+        }
+    }
 [Button()]
     void ApplyData()
 {
@@ -88,6 +96,8 @@ public class Room : MonoBehaviour
         Exception e = new Exception("SCENE NOT IN BUILD: " + buildIndex); 
         Debug.LogException(e);
     }
+    
+    
     roomData.SetDoorCount(allDoors);
 }
     

@@ -14,3 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomDatas:
   - {fileID: 11400000, guid: b6f9debe2fc731b4ebd8d0c52af773c4, type: 2}
+  - {fileID: 11400000, guid: fc0a7ebaef37d864c8a10a12067385d7, type: 2}
+  northRooms:
+  - {fileID: 11400000, guid: b6f9debe2fc731b4ebd8d0c52af773c4, type: 2}
+  - {fileID: 11400000, guid: fc0a7ebaef37d864c8a10a12067385d7, type: 2}
+  southRooms:
+  - {fileID: 11400000, guid: b6f9debe2fc731b4ebd8d0c52af773c4, type: 2}
+  - {fileID: 11400000, guid: fc0a7ebaef37d864c8a10a12067385d7, type: 2}
+  eastRooms:
+  - {fileID: 11400000, guid: b6f9debe2fc731b4ebd8d0c52af773c4, type: 2}
+  westRooms:
+  - {fileID: 11400000, guid: b6f9debe2fc731b4ebd8d0c52af773c4, type: 2}

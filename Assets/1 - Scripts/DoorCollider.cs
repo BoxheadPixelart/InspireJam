@@ -55,13 +55,14 @@ public class DoorCollider : MonoBehaviour
     public DoorInfo.Side GetSide()
     {
         RaycastHit frontHit;
+        RaycastHit backHit;
         DoorInfo.Side side = DoorInfo.Side.Unknown;
-        if (Physics.Raycast(transform.position + Vector3.up, transform.TransformDirection(Vector3.forward), out frontHit, 10, layerMask))
+        if (Physics.Raycast(transform.parent.position + Vector3.up, transform.forward, out frontHit, 10, layerMask))
         {
             side = DoorInfo.Side.Front; 
         }
         
-        if (Physics.Raycast(transform.position + Vector3.up, transform.TransformDirection(Vector3.back), out frontHit, 10, layerMask))
+        if (Physics.Raycast(transform.parent.position + Vector3.up,  -transform.forward, out backHit, 10, layerMask))
         {
             side = DoorInfo.Side.Back; 
         }

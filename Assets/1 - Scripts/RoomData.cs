@@ -9,7 +9,6 @@ using NaughtyAttributes;
     public class RoomData : ScriptableObject
 {
     public int buildIndex;
-    public int totalDoorCount;
     public int[] doorCount = new int[5]; //Index this with the enum. 
 
 
